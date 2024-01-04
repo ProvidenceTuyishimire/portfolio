@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cont.css">
+</head>
+<body style="background-color: black;">
+   <div>
+    <div class="me"><img src="p.png" width="200px">
+        <ul>
+            <li><a href="Portfolio.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+   </div>
+   <div class="container">
+   <div class="rw">
+   <form id="leaveMessageForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="email">Phone:</label>
+    <input type="phone" id="phone" name="phone" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message"id="id2" name="message" rows="4" required></textarea>
+
+    <p class="error" id="error-message"></p>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+<section class="contact">
+  <div class="content">
+      <h2>Contact Me</h2>
+  </div>
+  <div class="containers">
+      <div class="contactInfo">
+
+          <div class="box">
+              <div class="icon" ><img src="address.svg" alt="" height="40px"></div>
+              <div class="text">
+                  <h3>Address</h3>
+                  <p>Gasabo <br>Remera <br>Nyabisindu <br>Kinunga <br>098689</p>
+              </div>
+              </div>
+              
+<div class="box">
+                  <div class="icon"><img src="phone.svg" alt=""  height="30px"></div>
+                  <div class="text">
+                      <h3>Phone</h3>
+                      <p>0780559560</p>
+                  </div>
+                  </div>
+                  
+                  <div class="box">
+                      <div class="icon"><img src="email.svg" alt=""  height="30px"></i></div>
+                      <div class="text">
+                          <h3>Email</h3>
+                          <p>providencetuyishimire555@gmail.com</p>
+                      </div>
+                  </div>
+
+          </div>
+        </div>
+        <div class="rr">
+          <a href="https://www.linkedin.com/in/tuyishimire-providence-11069921b/"><img src="linkedin.svg" alt="Linkedhin"></a>
+          <a href="https://twitter.com/Tuyishimirepro4/"><img src="t-icon.svg" alt="twitter"></a>
+          <a href="https://www.facebook.com/login.php/"><img src="f-icon.svg" alt="facebook"></a>
+          <a href="https://web.whatsapp.com/"><img src="w-icon.svg" alt="whtsp"></a>
+          <a href="https://www.facebook.com/login.php/"><img src="in-icon.svg" alt="insta"></a>
+          </div> 
+        </div>
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+      var errorMessage = document.getElementById('error-message');
+
+      if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        errorMessage.textContent = 'All fields are required';
+        return false;
+      }
+
+      // Simple email validation
+      var emailRegex = /^\S+@\S+\.\S+$/;
+      if (!emailRegex.test(email)) {
+        errorMessage.textContent = 'Invalid email format';
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+
+</body>
+</html>

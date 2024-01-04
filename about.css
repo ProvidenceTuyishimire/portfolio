@@ -1,0 +1,71 @@
+.triangle {
+ width: 10px;
+ height: 120px;
+border-right: 1465px solid transparent;
+border-bottom: 204px solid rgb(70, 146, 70); 
+}
+.me{
+    background-color: rgb(49, 144, 49);
+    color: white;
+    width:1450px;
+    height:50px;
+    padding: 0px;
+    border-radius: 60px;
+   }
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    float: right;
+    }
+li a{
+    color:white;
+    margin: 50px;
+    text-decoration: none;
+    padding: 10px;
+    }
+    ul li a:hover{
+        color: aqua;
+    }
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+}
+.de{
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    bottom: 15px;
+    right: 100px;
+
+      }
+.de img{
+height: 70%;
+width: 50%;
+position: absolute;
+left: 55%;
+bottom: 30%;
+
+      }
+
+.you{
+height: 70%;
+width: 50%;
+margin-left: 10%;
+top: 40%;
+}
+.words{
+margin-right: 30%;
+margin-top: 10%;
+color: white;
+}
+.w{
+    height: 90px;
+    width: 90px;
+    padding-right: 90px;
+}
+.container{
+    position: fixed;
+}
+
